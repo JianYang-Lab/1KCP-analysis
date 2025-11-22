@@ -33,7 +33,7 @@ rule collapse_anno:
     shell:
         """
             python3 scripts/collapse_annotation.py {input.gencode} {output.collapse_gencode}
-            awk -v OFS='\\t' '{{if($3=="gene") print $1,$4-1,$5,$10}}' {input.gencode} | sed "s/\"\|;//g" > {output.gencode_bed}
+            awk -v OFS='\\t' '{{if($3=="gene") print $1,$4-1,$5,$10}}' {input.gencode} | sed "s/\\"\|;//g" > {output.gencode_bed}
         """
 
 # Rule: gene expression quantification
@@ -48,8 +48,8 @@ rule quantification:
         star_sort_bam=temp("results/quantification/{sample}_Aligned.sort.out.bam"),
         star_dedup_bam=temp("results/quantification/{sample}_Aligned.dedup.out.bam"),
         star_dedup_txt=temp("results/quantification/{sample}_Aligned.dedup.txt"),
-        count="results/quantification/{sample}.gene_reads.gct",
-        tpm="results/quantification/{sample}.gene_tpm.gct"
+        gene_count="results/quantification/{sample}.gene_reads.gct",
+        gene_tpm="results/quantification/{sample}.gene_tpm.gct"
     params:
         star_dir="results/quantification"
     conda:
@@ -124,9 +124,9 @@ rule tmm_normalization:
     input:
         merge_count="results/merge.gene_tpm.matrix",
         merge_tpm="results/merge.gene_count.matrix",
-        cov=contig['cov']
+        cov=config['cov']
     output:
-        merge_count_tmm="results/merge.gene_count_tmm.matrix"
+        merge_count_tmm="results/merge.gene_count_tmm.matrix",
         merge_count_tmm_peer="results/merge.gene_count_peer.matrix"
     conda:
         '../envs/peer.yml'

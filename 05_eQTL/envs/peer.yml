@@ -6,3 +6,4 @@ dependencies:
   - r-peer
   - bioconductor-impute
   - r-fastdummies
+  - r-data.table

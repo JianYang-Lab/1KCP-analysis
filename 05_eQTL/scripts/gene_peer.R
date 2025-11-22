@@ -1,6 +1,6 @@
 args <- commandArgs(trailingOnly = TRUE)
 num=60
-library(peer);library(data.table);library(impute);library('fastDummies');library(stringr)
+library(peer);library(data.table);library(impute);library('fastDummies');
 base_dirt="./"
 cov_file=args[1]
 expr=args[2]
@@ -25,7 +25,7 @@ PEER_update(model)
 PEER_getResidualVars(model)
 ID=covs$Participant_id
 pheno=PEER_getResiduals(model)
-RINT=function(x){
+RINT=function(x){s
     return(qnorm((rank(x,na.last="keep",ties.method ="random")-3/8)/sum(!is.na(x))))
 }
 expr_data5=apply(pheno,2,RINT)

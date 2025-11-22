@@ -16,4 +16,4 @@ rna_fq2: "../01_Assembly/data/seq/{sample}/{sample}-RNA.R2.fastq.gz"
 sample_list_file: "data/samples.txt"
 
 # Path of covariant list
-cov: "data/cov.txt"
+cov: "data/cov.list"
