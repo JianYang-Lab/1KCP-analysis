@@ -1,0 +1,14 @@
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample1-HiC.R1.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample1-HiC.R2.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample1-HiFi.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample1-RNA.R1.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample1-RNA.R2.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample1-WGS.R1.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample1-WGS.R2.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample2-HiC.R1.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample2-HiC.R2.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample2-HiFi.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample2-RNA.R1.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample2-RNA.R2.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample2-WGS.R1.fastq.gz
+https://yanglab.westlake.edu.cn/resources/1kcp/sharedata/1kcp-analysis/sample2-WGS.R2.fastq.gz

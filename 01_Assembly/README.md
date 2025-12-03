@@ -14,7 +14,7 @@ The pipeline is implemented as a Snakemake workflow (`Snakemake >= 7.0`). The re
 
 ## Inputs
 
-Input files are specified in `config.yaml`.
+Input files are specified in `config.yaml`. Sequencing data of test samples can be downloaded using `bash download.sh`.
 
 ## Outputs
 
